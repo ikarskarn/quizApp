@@ -1,0 +1,82 @@
+/*
+ADD FONTS LATER:
+font-family: 'Londrina Shadow', cursive;
+font-family: 'Londrina Solid', cursive;
+
+ADD PROPER RESPONSIVENESS LATER
+change answer arrangement
+media sizes: small(< 480px), medium(> 480px, < 1024px), larger(> 1024px)
+
+ADD BUTTON STATES
+js for button states including:
+Correct
+Incorrect
+Default
+Inactive (for submit)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+.score ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.score li {
+    display: inline;
+    padding: 10px;
+}
+
+.quiz-box {
+    text-align: center;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+fieldset  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px auto;
+    border: 0px;
+}
+
+img {
+    max-height: 50%;
+    max-width: 50%;
+}
+
+
+button {
+    margin: 15px auto;
+    display: flex;
+    width: 40%;
+    height: 50px;
+    justify-content: center;
+}
+
+.submit {
+    width: 20%;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.button-default {
+    background-color: lightgoldenrodyellow;
+}
+
+.button-incorrect {
+    background-color: red;
+}
+
+.button-correct {
+    background-color: lightgreen;
+}
