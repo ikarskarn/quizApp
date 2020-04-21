@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Components Quiz</title>
     <meta name="description" content="A quiz that focuses on the basic components of a 3D Object">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Londrina+Solid&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -17,32 +18,54 @@
             </section>
             <section role="score" class="score">
                 <ul>
-                    <li>Question: 0/5</li>
-                    <li>Score: 0/5</li>
+                    <li id="questionNumber">Question: 0/5</li>
+                    <li id="scoreText">Score: 0/5</li>
                 </ul>
             </section>
         </header>
-        <section class="quiz-box">
-            <img src="images/quad.png" alt="a single face with 4 edges">
+        <section class="open-view" id="open-view">
+            <img src="images/cover.png" alt="background image of video game models">
             <form>
                 <fieldset>
-                    <legend class="question-text">The image above is a polygon.  What is the best term to describe this type of</legend>
-                    <label for="0">
-                        <button type="button" class="button button-correct" id="0" value="quad" name="answer" required>quad</button>    
-                    </label>
-                    <label for="1">
-                        <button type="button" class="button button-incorrect" id="1" value="triangle" name="answer" required>triangle</button>    
-                    </label>
-                    <label for="2">
-                        <button type="button" class="button button-default" id="2" value="n-gon" name="answer" required>n-gon</button>    
-                    </label>
-                    <label for="3">
-                        <button type="button" class="button button-default" id="3" value="plane" name="answer" required>plane</button>    
-                    </label>
-                    <button type="submit" class="submit">Continue</button>
+                    <legend class="intro-text">In 3D Modeling, it is essential that you know the terms for the primary components of a 3D object.  The Quiz will help you test your knowledge of these terms.</legend>
+                    <button type="submit" class="submit">Start Quiz</button>
+                </fieldset>
+            </form>
+        </section>>
+        <section class="quiz-view hide" id="quiz-view">
+            <section class="quiz-box">
+                <img src="images/quad.png" alt="a single face with 4 edges">
+                <form>
+                    <fieldset>
+                        <legend class="question-text">The image above is a polygon.  What is the best term to describe this type of</legend>
+                        <label for="0">
+                            <button type="button" class="button button-correct" id="0" value="quad" name="answer" required>quad</button>    
+                        </label>
+                        <label for="1">
+                            <button type="button" class="button button-incorrect" id="1" value="triangle" name="answer" required>triangle</button>    
+                        </label>
+                        <label for="2">
+                            <button type="button" class="button button-default" id="2" value="n-gon" name="answer" required>n-gon</button>    
+                        </label>
+                        <label for="3">
+                            <button type="button" class="button button-default" id="3" value="plane" name="answer" required>plane</button>    
+                        </label>
+                        <button type="submit" class="submit">Continue</button>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+        <section class="results-view hide" id="results-view">
+            <img src="images/cover.png" alt="background image of video game models">
+            <form>
+                <fieldset>
+                    <legend class="results-text" id="results-text">Great job.  You have a firm grasp of the basic terms in 3D Modeling.</legend>
+                    <button type="submit" class="submit">Retry Quiz</button>
                 </fieldset>
             </form>
         </section>
     </main>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

@@ -21,6 +21,18 @@ Inactive (for submit)
 
 header {
     text-align: center;
+    border: 2px black solid;
+    padding: 5px;
+    background-color: lightgoldenrodyellow;
+}
+
+h1 {
+    font-family: 'Londrina Shadow', cursive;
+}
+
+body {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 18px;
 }
 
 .score ul {
@@ -35,7 +47,7 @@ header {
     padding: 10px;
 }
 
-.quiz-box {
+.quiz-box, .open-view, .results-view {
     text-align: center;
     margin: 15px auto;
     padding: 10px;
@@ -52,8 +64,15 @@ fieldset  {
 img {
     max-height: 50%;
     max-width: 50%;
+    border: 2px solid black;
+    box-shadow: 3px 3px lightgrey;
+    border-radius: 5px;
 }
 
+legend {
+    border: 2px solid black;
+    padding: 3px;
+}
 
 button {
     margin: 15px auto;
@@ -79,4 +98,8 @@ button {
 
 .button-correct {
     background-color: lightgreen;
+}
+
+.hide {
+    display: none;
 }
