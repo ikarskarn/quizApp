@@ -24,6 +24,10 @@ header {
     border: 2px black solid;
     padding: 5px;
     background-color: lightgoldenrodyellow;
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
 }
 
 h1 {
@@ -50,7 +54,7 @@ body {
 .quiz-box, .open-view, .results-view {
     text-align: center;
     margin: 15px auto;
-    padding: 10px;
+    padding-top: 120px;
 }
 
 fieldset  {
@@ -66,7 +70,7 @@ img {
     max-width: 50%;
     border: 2px solid black;
     box-shadow: 3px 3px lightgrey;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 legend {
@@ -80,13 +84,22 @@ button {
     width: 40%;
     height: 50px;
     justify-content: center;
+    border-radius: 5px;
 }
 
-.submit {
+.submit, .continue {
     width: 20%;
     justify-content: center;
     background-color: lightblue;
+    color: black;
 }
+
+/*
+.button-disabled {
+    background-color: darkgrey;
+    color: lightgrey;
+}
+*/
 
 .button-default {
     background-color: lightgoldenrodyellow;

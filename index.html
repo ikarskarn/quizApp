@@ -28,7 +28,7 @@
             <form>
                 <fieldset>
                     <legend class="intro-text">In 3D Modeling, it is essential that you know the terms for the primary components of a 3D object.  The Quiz will help you test your knowledge of these terms.</legend>
-                    <button type="submit" class="submit">Start Quiz</button>
+                    <button type="button" class="js-start-quiz">Start Quiz</button>
                 </fieldset>
             </form>
         </section>>
@@ -39,10 +39,10 @@
                     <fieldset>
                         <legend class="question-text">The image above is a polygon.  What is the best term to describe this type of</legend>
                         <label for="0">
-                            <button type="button" class="button button-correct" id="0" value="quad" name="answer" required>quad</button>    
+                            <button type="button" class="button button-default" id="0" value="quad" name="answer" required>quad</button>    
                         </label>
                         <label for="1">
-                            <button type="button" class="button button-incorrect" id="1" value="triangle" name="answer" required>triangle</button>    
+                            <button type="button" class="button button-default" id="1" value="triangle" name="answer" required>triangle</button>    
                         </label>
                         <label for="2">
                             <button type="button" class="button button-default" id="2" value="n-gon" name="answer" required>n-gon</button>    
@@ -50,7 +50,7 @@
                         <label for="3">
                             <button type="button" class="button button-default" id="3" value="plane" name="answer" required>plane</button>    
                         </label>
-                        <button type="submit" class="submit">Continue</button>
+                        <button type="button" id="js-continue-button" class="continue">Continue</button>
                     </fieldset>
                 </form>
             </section>
