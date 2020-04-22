@@ -94,13 +94,6 @@ button {
     color: black;
 }
 
-/*
-.button-disabled {
-    background-color: darkgrey;
-    color: lightgrey;
-}
-*/
-
 .button-default {
     background-color: lightgoldenrodyellow;
 }
