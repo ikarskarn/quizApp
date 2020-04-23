@@ -71,7 +71,7 @@ function resultsView() {
 function showQuestion() {
     let str = '';
     const i = currentQuestion;
-    document.getElementById("questionNumber").innerHTML = `Question: ${currentQuestion}/5`;
+    document.getElementById("questionNumber").innerHTML = `Question: ${currentQuestion + 1}/5`;
     console.log(i);
     str = 
         `<img src="${QUESTIONS[i].img}" alt="${QUESTIONS[i].alt}">
