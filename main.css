@@ -81,15 +81,14 @@ legend {
 button {
     margin: 15px auto;
     display: flex;
-    width: 40%;
+    width: 60%;
     height: 50px;
     justify-content: center;
     border-radius: 5px;
 }
 
 .submit, .continue {
-    width: 20%;
-    justify-content: center;
+    width: 30%;
     background-color: lightblue;
     color: black;
 }
@@ -108,4 +107,40 @@ button {
 
 .hide {
     display: none;
+}
+
+@media screen and (min-width: 480px) {
+    /*header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }*/
+    .button-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button-group button {
+        width: 50%;
+        margin: 5px 5px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /*header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }*/
+
+    .all-buttons {
+        display: flex;
+        flex-direction: center;
+    }
+
+    .button-group {
+        width: 50%;
+    }
 }

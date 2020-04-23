@@ -78,18 +78,16 @@ function showQuestion() {
         <form>
             <fieldset>
                 <legend class="question-text">${QUESTIONS[i].value}</legend>
-                <label for="0">
+                <div class="all-buttons">
+                <div class="button-group">
                     <button type="button" class="button button-default" id="0" value="${QUESTIONS[i].a1}" name="answer" required>${QUESTIONS[i].a1}</button>    
-                </label>
-                <label for="1">
                     <button type="button" class="button button-default" id="1" value="${QUESTIONS[i].a2}" name="answer" required>${QUESTIONS[i].a2}</button>    
-                </label>
-                <label for="2">
+                </div>
+                <div class="button-group">
                     <button type="button" class="button button-default" id="2" value="${QUESTIONS[i].a3}" name="answer" required>${QUESTIONS[i].a3}</button>    
-                </label>
-                <label for="3">
                     <button type="button" class="button button-default" id="3" value="${QUESTIONS[i].a4}" name="answer" required>${QUESTIONS[i].a4}</button>    
-                </label>
+                </div>
+                </div>
                 <button type="button" id="js-continue-button" value="continue" class="continue hide">Continue</button>
             </fieldset>
         </form>`
