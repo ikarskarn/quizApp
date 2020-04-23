@@ -120,7 +120,7 @@ function startQuiz() {
     viewState = "quiz-view";
     currentQuestion = 0;
     score = 0;
-    document.getElementById("js-continue-button").classList.add('hide');//disabled = true;
+    document.getElementById("js-continue-button").classList.add('hide');
     renderView();
     resolveScore();
 }
@@ -147,7 +147,6 @@ function handleAnswerClicks() {
         else if(choice === QUESTIONS[currentQuestion].correct) {
             event.currentTarget.className = "button button-correct";
             handleAnswers(true, allButtons);
-            //document.getElementById('js-continue-button').classList.remove('hide');
         }
         else {
             event.currentTarget.className = "button button-incorrect";
@@ -158,7 +157,6 @@ function handleAnswerClicks() {
                 }
             }
             handleAnswers(false, allButtons);
-            //document.getElementById('js-continue-button').classList.remove('hide');          
         }
     });
 }
